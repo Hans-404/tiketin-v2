@@ -1,0 +1,130 @@
+/* ==========================================================================
+           STRICT FLAT MINIMALIST CREAM THEME RULES
+           Zero box-shadows, zero gradients, zero 3D transforms on hover.
+           ========================================================================== */
+        * {
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+
+        body {
+            background-color: #FAF7F0;
+            color: #191817;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Custom Flat Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF7F0;
+            border-left: 1px solid #191817;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #191817;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C84B31;
+        }
+
+        /* Flat Hover Transitions (Colors & Borders ONLY) */
+        .flat-transition {
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+
+        /* Flat Button Styles */
+        .btn-flat-dark {
+            background-color: #191817;
+            color: #FAF7F0;
+            border: 1px solid #191817;
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+        .btn-flat-dark:hover {
+            background-color: #C84B31;
+            border-color: #C84B31;
+            color: #FAF7F0;
+        }
+
+        .btn-flat-rust {
+            background-color: #C84B31;
+            color: #FAF7F0;
+            border: 1px solid #191817;
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+        .btn-flat-rust:hover {
+            background-color: #191817;
+            color: #FAF7F0;
+            border-color: #191817;
+        }
+
+        .btn-flat-outline {
+            background-color: #FAF7F0;
+            color: #191817;
+            border: 1px solid #191817;
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+        .btn-flat-outline:hover {
+            background-color: #191817;
+            color: #FAF7F0;
+        }
+
+        .btn-flat-sand {
+            background-color: #F3EDE2;
+            color: #191817;
+            border: 1px solid #191817;
+            transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+        }
+        .btn-flat-sand:hover {
+            background-color: #E8E0D0;
+            color: #191817;
+        }
+
+        /* Filter Pill Active State */
+        .filter-pill.active {
+            background-color: #191817;
+            color: #FAF7F0;
+            border-color: #191817;
+        }
+
+        /* Concert Card Flat Hover */
+        .concert-card {
+            background-color: #F3EDE2;
+            border: 1px solid #191817;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+        .concert-card:hover {
+            background-color: #E8E0D0;
+        }
+
+        /* Schedule Row Flat Hover */
+        .schedule-row {
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+        .schedule-row:hover {
+            background-color: #E8E0D0;
+        }
+
+        /* Ticket Perforation Dashed Line */
+        .ticket-divider {
+            border-top: 1px dashed #191817;
+        }
+
+        /* High-Contrast Monochrome + Warm Cream Image Filter */
+        .rock-visual {
+            filter: grayscale(100%) contrast(115%) sepia(18%);
+            transition: filter 0.2s ease;
+        }
+        .concert-card:hover .rock-visual {
+            filter: grayscale(20%) contrast(105%) sepia(10%);
+        }
+
+        /* Form Input Focus without Glow */
+        input:focus, select:focus, textarea:focus {
+            outline: none !important;
+            border-color: #C84B31 !important;
+            background-color: #FAF7F0 !important;
+        }
